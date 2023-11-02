@@ -98,7 +98,8 @@ class _LoginFormState extends State<LoginForm> {
                   style: style16Indigo,
                 ),
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, RouteManager.registerPage);
+                  Navigator.popAndPushNamed(
+                      context, RouteManager.firstAppHomePage);
                 }),
           ],
         ),

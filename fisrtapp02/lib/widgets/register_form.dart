@@ -95,7 +95,13 @@ class _RegisterFormState extends State<RegisterForm> {
                   'Sign Up',
                   style: style16White,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.read<UserViewModel>().createUserInUI(context,
+                      name: nameController.text.trim(),
+                      email: emailController.text.trim(),
+                      password: passwordController.text.trim(),
+                      confirmPassword: confirmPasswordController.text.trim());
+                },
               ),
             ],
           ),
